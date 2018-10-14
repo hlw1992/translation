@@ -3,7 +3,8 @@
       <!-- 居中样式 -->
       <div>
         <form class='bgform form-inline' @submit.prevent="formSubmit">
-            <input type="text" class='form-control' placeholder="请输入中文" v-model="textToTranslate">
+            <input type="text" class='form-control' placeholder="请输入中文" 
+                v-model="textToTranslate">
             <select v-model="lang" class='form-control'>
                 <option value="en">English</option>
                 <option value="ja">Japanese</option>
@@ -44,6 +45,7 @@ export default {
         padding:20px;
         margin: 0 auto;
         width: 30%;
+        min-width:400px;
         border: 1px solid lightgray;
         border-radius: 10px;
     }

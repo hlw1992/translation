@@ -9,7 +9,7 @@
 
 export default {
   name: 'translateOutput',
-  //父组件 向 子组件传值 通过props数组
+  //父组件 向 子组件传值 通过props
   props:[
       'textTranslated'
   ]

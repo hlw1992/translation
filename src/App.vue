@@ -25,7 +25,7 @@ export default {
   methods:{ //方法
     translateText:function(text,lang){
       // alert(text)
-      //得配个vue-resource使用
+      //配合vue-resource使用
       this.$http.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20180911T032104Z.acdf4dadd90d6039.0c52045dc97566522effce6abd29ede27075a577&lang='+lang+'&text='+text)
       .then((response)=>{
         // console.log(response.body.text[0])
